@@ -90,6 +90,7 @@
     </RadioGroup>
 
     <Button
+        android:id="@+id/btn_valider_obj_hyd"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:text="Button"
