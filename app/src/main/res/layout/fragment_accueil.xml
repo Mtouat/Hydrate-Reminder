@@ -8,6 +8,8 @@
     tools:context=".MainActivity"
     android:background="@color/fond_appli">
 
+    //Commentaire
+
 
     <TextView
         android:id="@+id/titre"
