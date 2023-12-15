@@ -48,5 +48,17 @@ public class Menu_Principal extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.btnNotif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                Notifications_menu notifications_menu = new Notifications_menu();
+                fragmentTransaction.replace(R.id.fragment_container_view, notifications_menu);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }
