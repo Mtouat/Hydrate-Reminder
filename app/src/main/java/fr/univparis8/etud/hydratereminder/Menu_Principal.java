@@ -60,5 +60,17 @@ public class Menu_Principal extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.btnDefObj.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                Objectifs_hydratation objectifsHydratation = new Objectifs_hydratation();
+                fragmentTransaction.replace(R.id.fragment_container_view, objectifsHydratation);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
     }
 }
