@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Objectifs_hydratation">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tV_obj_hydratation"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/objectif_hydratation" />
+
+    <EditText
+        android:id="@+id/eTN_cl_par_jour"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="@string/nb_cl_par_jour" />
+
+    <TextView
+        android:id="@+id/tV_min_et_recommande"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="@string/min_et_reco" />
+
+    <TextView
+        android:id="@+id/tV_rappels"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:text="@string/rappels" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="211dp">
+
+        <RadioButton
+            android:id="@+id/rB_30min"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/trente_min" />
+
+        <RadioButton
+            android:id="@+id/rB_1h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/une_heure" />
+
+        <RadioButton
+            android:id="@+id/rB_2h"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/deux_heures" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB_perso_temps"
+                android:layout_width="144dp"
+                android:layout_height="wrap_content"
+                android:text="@string/personalisation" />
+
+            <EditText
+                android:id="@+id/eTN_perso_temps"
+                android:layout_width="84dp"
+                android:layout_height="61dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:text="@string/espace_perso"
+                android:textSize="0sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="13dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:text="@string/min" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="Button" />
+
+</LinearLayout>

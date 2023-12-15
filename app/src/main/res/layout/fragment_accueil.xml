@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/fond_appli">
+
+
+    <TextView
+        android:id="@+id/titre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textColor="#233A80"
+        android:textSize="34sp"
+       />
+
+
+    <ImageView
+        android:id="@+id/badge_niveau_actuel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/badge" />
+
+
+    <ImageButton
+        android:id="@+id/btn_parametres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/fond_appli"
+        android:tint="@color/texte_appli"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="324dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/gourde_niveau"
+            android:layout_width="5dp"
+            android:layout_height="309dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/gourde" />
+
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="143dp"
+            android:layout_height="307dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/graphique_image" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="148dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="284dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/goutte_d_eau_version2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tV_obj_semaine"
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_weight="1"
+                android:text="@string/obj_semaine" />
+
+
+            <TextView
+                android:id="@+id/tV_obj_mois"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="1"
+                android:text="@string/obj_mois" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

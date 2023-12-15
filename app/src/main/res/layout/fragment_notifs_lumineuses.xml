@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifs_lumineuses"
+    android:background="@color/fond_appli">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tV_notifs_lumineuses"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:text="@string/notifs_lumineuses" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_oui_notif_lum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/oui" />
+
+        <Button
+            android:id="@+id/btn_non_notif_lum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/non" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.gridlayout.widget.GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="126dp">
+
+            <Button
+                android:id="@+id/btn_bleu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bleu"
+                android:text="@string/bleu"
+                android:textSize="0sp" />
+
+            <Button
+                android:id="@+id/btn_orange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/orange"
+                android:text="@string/orange"
+                android:textSize="0sp" />
+
+            <Button
+                android:id="@+id/btn_vert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/vert"
+                android:text="@string/vert"
+                android:textSize="0sp"
+                app:layout_column="2"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/btn_rouge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/rouge"
+                android:text="@string/rouge"
+                android:textSize="0sp"
+                app:layout_column="3"
+                app:layout_row="0" />
+
+            <Button
+                android:id="@+id/btn_jaune"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/jaune"
+                android:text="@string/jaune"
+                android:textSize="0sp"
+                app:layout_column="2"
+                app:layout_row="1" />
+
+            <Button
+                android:id="@+id/btn_violet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/violet"
+                android:text="@string/violet"
+                android:textSize="0sp"
+                app:layout_column="1"
+                app:layout_row="1" />
+
+        </androidx.gridlayout.widget.GridLayout>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="389dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tV_couleur_choisies"
+            android:layout_width="209dp"
+            android:layout_height="wrap_content"
+            android:text="@string/couleur_choisie" />
+
+        <TextView
+            android:id="@+id/tV_en_attendant"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TextView" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_valider_notif_lum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/valider"
+        app:iconPadding="8dp" />
+
+</LinearLayout>

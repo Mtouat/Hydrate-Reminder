@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Recalibrage1">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tV_Recalibrage"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="@string/recalibrage"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/tV_consigne_recalibrage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/consigne1"
+        android:textAlignment="center" />
+
+    <ImageView
+        android:id="@+id/iV_fleche_bas"
+        android:layout_width="wrap_content"
+        android:layout_height="442dp"
+        android:layout_weight="1"
+        android:src="@drawable/fleche_bas_image"
+        android:layout_gravity="center_horizontal" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/socle_image" />
+
+</LinearLayout>

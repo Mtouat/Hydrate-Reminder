@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifs_vibrations">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tV_notifs_vibrations"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:text="@string/notifs_vibrations" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_oui_notif_vib"
+            android:layout_width="206dp"
+            android:layout_height="match_parent"
+            android:text="@string/oui" />
+
+        <Button
+            android:id="@+id/btn_non_notif_vib"
+            android:layout_width="205dp"
+            android:layout_height="match_parent"
+            android:text="@string/non" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="473dp">
+
+        <RadioButton
+            android:id="@+id/rB_faible"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:text="@string/faible" />
+
+        <RadioButton
+            android:id="@+id/rB_moyen"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:text="@string/moyen" />
+
+        <RadioButton
+            android:id="@+id/rB_fort"
+            android:layout_width="match_parent"
+            android:layout_height="155dp"
+            android:text="@string/fort" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_valider_notif_vib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Notifs_sonores">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tV_notifs_sonores"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/notifs_sonores" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_oui_notif_sons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/oui" />
+
+        <Button
+            android:id="@+id/btn_non_notif_son"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/non" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB_audio1"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:text="@string/audio1" />
+
+            <ImageView
+                android:id="@+id/iV_notif_son"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/son_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB_audio2"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:text="@string/audio2" />
+
+            <ImageView
+                android:id="@+id/iV_notif_son2"
+                android:layout_width="86dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/son_image" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB_audio3"
+                android:layout_width="312dp"
+                android:layout_height="wrap_content"
+                android:text="@string/audio3" />
+
+            <ImageView
+                android:id="@+id/iV_notif_son3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/son_image" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rB_sons_persos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/audio_perso" />
+        </LinearLayout>
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/valider_notifs_sons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider" />
+
+</LinearLayout>

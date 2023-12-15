@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Recalibrage2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tV_Recalibrage2"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="@string/recalibrage" />
+
+    <TextView
+        android:id="@+id/tV_gourde_calibree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gourde_calibree" />
+
+    <EditText
+        android:id="@+id/eTT_nom_gourde"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/nom_gourde" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/nb_cl"       />
+
+    <Button
+        android:id="@+id/btn_valider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/valider" />
+
+</LinearLayout>

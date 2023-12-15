@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Changement_de_gourde"
+    android:background="@color/fond_appli">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tV_chgmt_gourde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/chgmt_gourde"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btn_gourde1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/gourde1" />
+
+    <Button
+        android:id="@+id/btn_ajouter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ajouter" />
+
+</LinearLayout>
