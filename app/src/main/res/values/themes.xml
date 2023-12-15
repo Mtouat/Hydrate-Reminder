@@ -6,4 +6,10 @@
     </style>
 
     <style name="Theme.HydrateReminder" parent="Base.Theme.HydrateReminder" />
+
+    <style name="text_color">
+        <item name="android:textColor"> #191970 </item>
+    </style>
+
+
 </resources>

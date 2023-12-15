@@ -5,7 +5,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Changement_de_gourde"
-    android:background="@color/fond_appli">
+    android:background="@color/fond_appli"
+    android:theme="@style/text_color">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -14,7 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/chgmt_gourde"
-        android:textSize="20sp" />
+        android:textSize="24sp" />
 
     <Button
         android:id="@+id/btn_gourde1"

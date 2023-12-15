@@ -10,5 +10,6 @@
     <color name="jaune">#FFFFEB3B</color>
     <color name="fond_appli">#F8E5AD</color>
     <color name="texte_appli">#191970</color>
+    <color name="fond_boutons">#FCC931</color>
 
 </resources>

@@ -6,7 +6,10 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/fond_appli">
+    android:background="@color/fond_appli"
+    android:theme="@style/text_color"
+    >
+
 
 
     <TextView
@@ -16,7 +19,6 @@
         android:fontFamily="@font/roboto"
         android:text="@string/app_name"
         android:textAlignment="center"
-        android:textColor="#233A80"
         android:textSize="34sp"
        />
 
@@ -25,15 +27,16 @@
         android:id="@+id/badge_niveau_actuel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/badge" />
+        app:srcCompat="@drawable/badge"
+        android:contentDescription="@string/niveau_Actuel"/>
 
 
     <ImageButton
         android:id="@+id/btn_parametres"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:background="@color/fond_appli"
-        android:tint="@color/texte_appli"
+        android:contentDescription="@string/parametres"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     <LinearLayout

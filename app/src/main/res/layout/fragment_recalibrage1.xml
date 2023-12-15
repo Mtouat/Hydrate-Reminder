@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Recalibrage1">
+    tools:context=".Recalibrage1"
+    android:background="@color/fond_appli"
+    android:theme="@style/text_color">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView

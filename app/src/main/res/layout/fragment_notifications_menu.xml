@@ -4,31 +4,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".Notifications_menu">
+    tools:context=".Notifications_menu"
+    android:background="@color/fond_appli"
+    android:theme="@style/text_color"
+    >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/tV_notifications"
         android:layout_width="match_parent"
         android:layout_height="72dp"
-        android:text="@string/notifications" />
+        android:text="@string/notifications"
+        android:background="@color/fond_boutons"/>
 
     <Button
         android:id="@+id/btn_luminosite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/luminosite" />
+        android:text="@string/luminosite"
+        android:textColor="@color/texte_appli"
+        android:backgroundTint="@color/fond_boutons"/>
 
     <Button
         android:id="@+id/btn_vibrations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/vibrations" />
+        android:text="@string/vibrations"
+        android:textColor="@color/texte_appli"
+        android:backgroundTint="@color/fond_boutons"/>
 
     <Button
         android:id="@+id/btn_audio_son"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/audio_sonneries" />
+        android:text="@string/audio_sonneries"
+        android:textColor="@color/texte_appli"
+        android:backgroundTint="@color/fond_boutons"/>
 
 </LinearLayout>

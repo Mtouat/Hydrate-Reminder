@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Notifs_lumineuses"
-    android:background="@color/fond_appli">
+    android:background="@color/fond_appli"
+    android:theme="@style/text_color">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -25,14 +26,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/oui" />
+            android:text="@string/oui"
+            android:textColor="@color/texte_appli"
+            android:backgroundTint="@color/fond_boutons"/>
 
         <Button
             android:id="@+id/btn_non_notif_lum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/non" />
+            android:text="@string/non"
+            android:textColor="@color/texte_appli"
+            android:backgroundTint="@color/fond_boutons"/>
     </LinearLayout>
 
     <RadioGroup
