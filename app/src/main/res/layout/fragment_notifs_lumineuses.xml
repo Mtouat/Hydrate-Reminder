@@ -41,6 +41,7 @@
     </LinearLayout>
 
     <RadioGroup
+        android:id="@+id/groupe_couleurs"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -109,6 +110,7 @@
     </RadioGroup>
 
     <LinearLayout
+        android:id="@+id/couleur_choisie"
         android:layout_width="match_parent"
         android:layout_height="389dp"
         android:orientation="horizontal">
