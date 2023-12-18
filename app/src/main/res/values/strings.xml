@@ -22,6 +22,7 @@
     <string name="niveau_Actuel">Niveau actuel</string>
     <string name="badges_acquis">Badges acquis</string>
     <string name="badges_non_acquis">Badges non acquis</string>
+    <string name="titre_badges">Badges </string>
 
     //Recalibrage 1 et 2
     <string name="recalibrage">Recalibrage</string>

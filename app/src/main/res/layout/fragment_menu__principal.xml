@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,10 +8,16 @@
     android:orientation="vertical"
     tools:context=".Menu_Principal">
 
+    <ImageView
+        android:id="@+id/iV_retour_mp"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/btn_dialog" />
+
     <Button
         android:id="@+id/btn_chgmt_gourde"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="170dp"
         android:backgroundTint="@color/fond_boutons"
         android:text="@string/chgmt_gourde"
         android:textColor="@color/texte_appli" />
@@ -18,7 +25,7 @@
     <Button
         android:id="@+id/btn_notif"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="170dp"
         android:backgroundTint="@color/fond_boutons"
         android:text="@string/notif"
         android:textColor="@color/texte_appli" />
@@ -26,7 +33,7 @@
     <Button
         android:id="@+id/btn_def_obj"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="170dp"
         android:backgroundTint="@color/fond_boutons"
         android:text="@string/def_obj"
         android:textColor="@color/texte_appli" />
@@ -34,7 +41,7 @@
     <Button
         android:id="@+id/btn_perso_appli_et_access"
         android:layout_width="match_parent"
-        android:layout_height="175dp"
+        android:layout_height="170dp"
         android:backgroundTint="@color/fond_boutons"
         android:text="@string/perso_appli_et_access"
         android:textColor="@color/texte_appli" />
