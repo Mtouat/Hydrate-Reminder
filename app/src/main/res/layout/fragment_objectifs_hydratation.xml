@@ -77,7 +77,8 @@
                 android:ems="10"
                 android:inputType="number"
                 android:text="@string/espace_perso"
-                android:textSize="0sp" />
+                android:textAlignment="center"
+                android:textSize="14sp" />
 
             <TextView
                 android:id="@+id/textView"

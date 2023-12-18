@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Notifs_sonores"
     android:background="@color/fond_appli"
-    android:theme="@style/text_color">
+    android:orientation="vertical"
+    android:theme="@style/text_color"
+    tools:context=".Notifs_sonores">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
@@ -18,112 +18,101 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="81dp"
+        android:layout_height="58dp"
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn_oui_notif_sons"
+            android:id="@+id/btn_oui_notif_vib"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/fond_boutons"
             android:text="@string/oui"
-            android:textColor="@color/texte_appli"
-            android:backgroundTint="@color/fond_boutons"/>
+            android:textColor="@color/texte_appli" />
 
         <Button
-            android:id="@+id/btn_non_notif_son"
+            android:id="@+id/btn_non_notif_vib"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/fond_boutons"
             android:text="@string/non"
-            android:textColor="@color/texte_appli"
-            android:backgroundTint="@color/fond_boutons"/>
+            android:textColor="@color/texte_appli" />
 
     </LinearLayout>
 
-    <RadioGroup
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="174dp"
-        android:layout_weight="1"
-        >
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:orientation="horizontal">
+        <RadioGroup
+            android:layout_width="574dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
 
             <RadioButton
                 android:id="@+id/rB_audio1"
-                android:layout_width="313dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/audio1"
-                android:textColor="@color/texte_appli"
-                />
-
-            <ImageView
-                android:id="@+id/iV_notif_son"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:src="@drawable/son_image" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:textColor="@color/texte_appli" />
 
             <RadioButton
                 android:id="@+id/rB_audio2"
-                android:layout_width="312dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/audio2"
-                android:textColor="@color/texte_appli"/>
-
-            <ImageView
-                android:id="@+id/iV_notif_son2"
-                android:layout_width="86dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/son_image" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
+                android:textColor="@color/texte_appli" />
 
             <RadioButton
                 android:id="@+id/rB_audio3"
-                android:layout_width="312dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/audio3"
-                android:textColor="@color/texte_appli"/>
-
-            <ImageView
-                android:id="@+id/iV_notif_son3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:src="@drawable/son_image" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+                android:textColor="@color/texte_appli" />
 
             <RadioButton
                 android:id="@+id/rB_sons_persos"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/audio_perso"
-                android:textColor="@color/texte_appli"/>
+                android:textColor="@color/texte_appli" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iV_notif_son"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:src="@drawable/son_image" />
+
+            <ImageView
+                android:id="@+id/iV_notif_son3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:src="@drawable/son_image" />
+
+            <ImageView
+                android:id="@+id/iV_notif_son2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:src="@drawable/son_image" />
+
+            <ImageView
+                android:id="@+id/iV_sons_persos"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:src="@android:drawable/ic_menu_add" />
         </LinearLayout>
 
-    </RadioGroup>
+    </LinearLayout>
 
     <Button
         android:id="@+id/valider_notifs_sons"

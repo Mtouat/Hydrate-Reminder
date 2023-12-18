@@ -37,6 +37,7 @@
         android:layout_height="50dp"
         android:background="@color/fond_appli"
         android:contentDescription="@string/parametres"
+        android:layout_gravity="right"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     <LinearLayout

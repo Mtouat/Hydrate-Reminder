@@ -2,40 +2,40 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/fond_appli"
     android:orientation="vertical"
-    tools:context=".Menu_Principal"
-    android:background="@color/fond_appli">
+    tools:context=".Menu_Principal">
 
     <Button
         android:id="@+id/btn_chgmt_gourde"
         android:layout_width="match_parent"
-        android:layout_height="183dp"
+        android:layout_height="175dp"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/chgmt_gourde"
-        android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textColor="@color/texte_appli" />
 
     <Button
         android:id="@+id/btn_notif"
         android:layout_width="match_parent"
-        android:layout_height="183dp"
+        android:layout_height="175dp"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/notif"
-        android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textColor="@color/texte_appli" />
 
     <Button
         android:id="@+id/btn_def_obj"
         android:layout_width="match_parent"
-        android:layout_height="183dp"
+        android:layout_height="175dp"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/def_obj"
-        android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textColor="@color/texte_appli" />
 
     <Button
         android:id="@+id/btn_perso_appli_et_access"
         android:layout_width="match_parent"
-        android:layout_height="182dp"
+        android:layout_height="175dp"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/perso_appli_et_access"
-        android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textColor="@color/texte_appli" />
 </LinearLayout>
