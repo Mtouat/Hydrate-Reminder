@@ -42,7 +42,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/fond_boutons"
             android:text="@string/oui"
-            android:textColor="@color/texte_appli" />
+            android:textColor="@color/texte_appli"/>
 
         <Button
             android:id="@+id/btn_non_notif_vib"
