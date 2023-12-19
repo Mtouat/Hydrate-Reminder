@@ -30,8 +30,14 @@ public class Notifs_vibrations extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding = FragmentNotifsVibrationsBinding.inflate(inflater, container, false);
+
         binding.groupeVibrations.setVisibility(View.INVISIBLE);
+
+        binding.btnNonNotifVib.setStrokeWidth(10);
+        binding.btnNonNotifVib.setStrokeColorResource(R.color.texte_appli);
+
         return binding.getRoot();
     }
 
@@ -40,6 +46,11 @@ public class Notifs_vibrations extends Fragment {
         binding.btnOuiNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnNonNotifVib.setStrokeWidth(0);
+                binding.btnOuiNotifVib.setStrokeWidth(10);
+                binding.btnOuiNotifVib.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeVibrations.setVisibility(View.VISIBLE);
             }
         });
@@ -47,6 +58,11 @@ public class Notifs_vibrations extends Fragment {
         binding.btnNonNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnOuiNotifVib.setStrokeWidth(0);
+                binding.btnNonNotifVib.setStrokeWidth(10);
+                binding.btnNonNotifVib.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeVibrations.setVisibility(View.INVISIBLE);
             }
         });

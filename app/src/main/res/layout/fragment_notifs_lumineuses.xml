@@ -37,7 +37,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_oui_notif_lum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:text="@string/oui"
             android:textColor="@color/texte_appli" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_non_notif_lum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

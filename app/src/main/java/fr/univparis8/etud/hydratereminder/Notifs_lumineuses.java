@@ -30,9 +30,15 @@ public class Notifs_lumineuses extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding = FragmentNotifsLumineusesBinding.inflate(inflater, container, false);
+
+        binding.btnNonNotifLum.setStrokeWidth(10);
+        binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
+
         binding.groupeCouleurs.setVisibility(View.INVISIBLE);
         binding.couleurChoisie.setVisibility(View.INVISIBLE);
+
         return binding.getRoot();
     }
 
@@ -42,6 +48,11 @@ public class Notifs_lumineuses extends Fragment {
         binding.btnOuiNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnNonNotifLum.setStrokeWidth(0);
+                binding.btnOuiNotifLum.setStrokeWidth(10);
+                binding.btnOuiNotifLum.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeCouleurs.setVisibility(View.VISIBLE);
                 binding.couleurChoisie.setVisibility(View.VISIBLE);
             }
@@ -50,6 +61,11 @@ public class Notifs_lumineuses extends Fragment {
         binding.btnNonNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnOuiNotifLum.setStrokeWidth(0);
+                binding.btnNonNotifLum.setStrokeWidth(10);
+                binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeCouleurs.setVisibility(View.INVISIBLE);
                 binding.couleurChoisie.setVisibility(View.INVISIBLE);
             }

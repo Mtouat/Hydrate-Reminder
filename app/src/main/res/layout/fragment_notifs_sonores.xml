@@ -36,8 +36,8 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btn_oui_notif_vib"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_oui_notif_son"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -45,8 +45,8 @@
             android:text="@string/oui"
             android:textColor="@color/texte_appli" />
 
-        <Button
-            android:id="@+id/btn_non_notif_vib"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_non_notif_son"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
