@@ -47,5 +47,17 @@ public class Changement_de_gourde extends Fragment {
             }
         });
 
+        binding.btnGourde1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                Accueil accueil = new Accueil();
+                fragmentTransaction.replace(R.id.fragment_container_view, accueil);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
+
     }
 }
