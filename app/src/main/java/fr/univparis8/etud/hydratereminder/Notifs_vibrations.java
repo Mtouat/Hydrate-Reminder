@@ -40,6 +40,7 @@ public class Notifs_vibrations extends Fragment {
         binding.btnOuiNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                binding.btnOuiNotifVib.setBackgroundResource(R.drawable.my_border);
                 binding.groupeVibrations.setVisibility(View.VISIBLE);
             }
         });
@@ -47,6 +48,7 @@ public class Notifs_vibrations extends Fragment {
         binding.btnNonNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                binding.btnNonNotifVib.setBackgroundResource(R.drawable.my_border);
                 binding.groupeVibrations.setVisibility(View.INVISIBLE);
             }
         });
