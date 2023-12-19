@@ -24,8 +24,8 @@
 
         <TextView
             android:id="@+id/tV_Recalibrage"
-            android:layout_width="336dp"
-            android:layout_height="38dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/recalibrage"
             android:textAlignment="center" />
 
@@ -53,18 +53,18 @@
 
         <ImageView
             android:id="@+id/iV_socle"
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="start"
             android:src="@drawable/socle_image" />
 
         <ImageButton
             android:id="@+id/iB_page_suivante"
-            android:layout_width="72dp"
-            android:layout_height="116dp"
-            android:layout_weight="1"
-            android:src="@android:drawable/ic_media_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
             android:contentDescription="vers page suivante"
-            />
+            android:src="@android:drawable/ic_media_next" />
 
     </LinearLayout>
 
