@@ -30,23 +30,39 @@ public class Notifs_sonores extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
         binding = FragmentNotifsSonoresBinding.inflate(inflater, container, false);
+
         binding.groupeSons.setVisibility(View.INVISIBLE);
+
+        binding.btnNonNotifSon.setStrokeWidth(10);
+        binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
+
         return binding.getRoot();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle SavedInstanceState){
-        binding.btnOuiNotifVib.setOnClickListener(new View.OnClickListener() {
+        binding.btnOuiNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnNonNotifSon.setStrokeWidth(0);
+                binding.btnOuiNotifSon.setStrokeWidth(10);
+                binding.btnOuiNotifSon.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeSons.setVisibility(View.VISIBLE);
             }
         });
 
-        binding.btnNonNotifVib.setOnClickListener(new View.OnClickListener() {
+        binding.btnNonNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                binding.btnOuiNotifSon.setStrokeWidth(0);
+                binding.btnNonNotifSon.setStrokeWidth(10);
+                binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
+
                 binding.groupeSons.setVisibility(View.INVISIBLE);
             }
         });
