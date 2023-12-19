@@ -42,8 +42,8 @@ public class Objectifs_hydratation extends Fragment {
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                Menu_Principal menuPrincipal = new Menu_Principal();
-                fragmentTransaction.replace(R.id.fragment_container_view, menuPrincipal);
+                Accueil accueil = new Accueil();
+                fragmentTransaction.replace(R.id.fragment_container_view, accueil);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
