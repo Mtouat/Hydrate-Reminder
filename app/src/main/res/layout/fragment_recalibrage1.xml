@@ -13,7 +13,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:theme="@style/titles">
 
         <ImageView
             android:id="@+id/iV_retour_r1"
@@ -24,8 +25,9 @@
 
         <TextView
             android:id="@+id/tV_Recalibrage"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
             android:text="@string/recalibrage"
             android:textAlignment="center" />
 

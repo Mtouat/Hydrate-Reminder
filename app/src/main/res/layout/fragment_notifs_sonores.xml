@@ -13,19 +13,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:theme="@style/titles">
 
         <ImageView
             android:id="@+id/iv_retour_ns"
-            android:layout_width="47dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@android:drawable/btn_dialog" />
 
         <TextView
             android:id="@+id/tV_notifs_sonores"
-            android:layout_width="329dp"
-            android:layout_height="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
             android:text="@string/notifs_sonores" />
     </LinearLayout>
 

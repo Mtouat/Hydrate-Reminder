@@ -11,5 +11,12 @@
         <item name="android:textColor"> #191970 </item>
     </style>
 
+    <style name="titles">
+        <item name="android:textColor"> @color/texte_appli </item>
+        <item name="android:textSize">32dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:background">@color/fond_boutons</item>
+    </style>
+
 
 </resources>
