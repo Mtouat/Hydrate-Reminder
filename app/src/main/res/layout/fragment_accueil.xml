@@ -33,11 +33,11 @@
 
     <ImageButton
         android:id="@+id/btn_parametres"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="51dp"
+        android:layout_height="57dp"
+        android:layout_gravity="right"
         android:background="@color/fond_appli"
         android:contentDescription="@string/parametres"
-        android:layout_gravity="right"
         app:srcCompat="@android:drawable/ic_menu_preferences" />
 
     <LinearLayout
@@ -67,13 +67,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="148dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
 
         <ImageView
             android:id="@+id/imageView12"
-            android:layout_width="284dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/goutte_d_eau_version2" />
@@ -89,7 +89,7 @@
             <TextView
                 android:id="@+id/tV_obj_semaine"
                 android:layout_width="match_parent"
-                android:layout_height="6dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/obj_semaine" />
 
@@ -97,7 +97,7 @@
             <TextView
                 android:id="@+id/tV_obj_mois"
                 android:layout_width="match_parent"
-                android:layout_height="3dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/obj_mois" />
         </LinearLayout>
