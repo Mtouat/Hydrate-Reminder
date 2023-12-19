@@ -49,6 +49,13 @@ public class Objectifs_hydratation extends Fragment {
             }
         });
 
+        binding.iVRetourOh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
+
 
     }
 }

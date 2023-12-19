@@ -51,5 +51,12 @@ public class Recalibrage2 extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.iVRetourR2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
     }
 }

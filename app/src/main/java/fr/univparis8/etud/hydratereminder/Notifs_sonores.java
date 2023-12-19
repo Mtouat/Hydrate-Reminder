@@ -12,6 +12,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import java.util.Objects;
+
 import fr.univparis8.etud.hydratereminder.databinding.FragmentNotifsSonoresBinding;
 
 public class Notifs_sonores extends Fragment {
@@ -76,6 +78,13 @@ public class Notifs_sonores extends Fragment {
                 fragmentTransaction.replace(R.id.fragment_container_view, accueil);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+            }
+        });
+
+        binding.ivRetourNs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
             }
         });
     }
