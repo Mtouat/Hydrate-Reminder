@@ -111,7 +111,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/fond_boutons"
-        android:text="Button"
+        android:text="@string/valider"
         android:textColor="@color/texte_appli" />
 
 </LinearLayout>

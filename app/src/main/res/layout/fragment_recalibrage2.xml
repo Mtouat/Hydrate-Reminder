@@ -60,7 +60,7 @@
     <Button
         android:id="@+id/btn_valider"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:backgroundTint="@color/fond_boutons"
         android:text="@string/valider"
         android:textColor="@color/texte_appli" />

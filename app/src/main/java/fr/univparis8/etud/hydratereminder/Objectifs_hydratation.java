@@ -17,7 +17,7 @@ import fr.univparis8.etud.hydratereminder.databinding.FragmentObjectifsHydratati
 public class Objectifs_hydratation extends Fragment {
 
     FragmentObjectifsHydratationBinding binding;
-    public static Objectifs_hydratation newInstance(String param1, String param2) {
+    public static Objectifs_hydratation newInstance() {
         Objectifs_hydratation fragment = new Objectifs_hydratation();
         return fragment;
     }
@@ -48,6 +48,7 @@ public class Objectifs_hydratation extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
 
     }
 }
