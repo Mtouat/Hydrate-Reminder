@@ -5,6 +5,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,6 +52,18 @@ public class Notifs_lumineuses extends Fragment {
             public void onClick(View v) {
                 binding.groupeCouleurs.setVisibility(View.INVISIBLE);
                 binding.couleurChoisie.setVisibility(View.INVISIBLE);
+            }
+        });
+
+        binding.btnValiderNotifLum.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FragmentManager fragmentManager = getParentFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                Accueil accueil = new Accueil();
+                fragmentTransaction.replace(R.id.fragment_container_view, accueil);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
     }

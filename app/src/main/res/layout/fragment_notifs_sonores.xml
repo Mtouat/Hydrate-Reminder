@@ -129,7 +129,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/valider_notifs_sons"
+        android:id="@+id/btn_valider_notifs_sons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/valider" />
