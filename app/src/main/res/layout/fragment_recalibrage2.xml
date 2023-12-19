@@ -37,8 +37,13 @@
         android:id="@+id/tV_gourde_calibree"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/gourde_calibree"
-        android:textSize="16sp" />
+        android:textAlignment="center"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/eTT_nom_gourde"
@@ -46,7 +51,11 @@
         android:layout_height="235dp"
         android:ems="10"
         android:inputType="text"
-        android:text="@string/nom_gourde" />
+        android:text="@string/nom_gourde"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/editTextNumberDecimal"
@@ -56,14 +65,21 @@
         android:ems="10"
         android:inputType="numberDecimal"
         android:text="@string/nb_cl"
-        android:textSize="16sp" />
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/btn_valider"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/fond_boutons"
         android:text="@string/valider"
-        android:textColor="@color/texte_appli" />
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp"
+        />
 
 </LinearLayout>

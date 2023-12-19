@@ -42,18 +42,25 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/fond_boutons"
             android:text="@string/oui"
-            android:textColor="@color/texte_appli"/>
+            android:layout_marginTop="35sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp"
+            />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_non_notif_vib"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/fond_boutons"
             android:text="@string/non"
-            android:textColor="@color/texte_appli" />
+            android:layout_marginTop="35sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
@@ -67,6 +74,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/faible"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:textSize="20sp"
             android:textColor="@color/texte_appli" />
 
         <RadioButton
@@ -74,7 +84,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/moyen"
-            android:textColor="@color/texte_appli" />
+            android:layout_marginTop="35sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rB_fort"
@@ -89,7 +103,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/valider"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
         android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textSize="20sp" />
 
 </LinearLayout>

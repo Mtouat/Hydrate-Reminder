@@ -27,7 +27,7 @@
     //Recalibrage 1 et 2
     <string name="recalibrage">Recalibrage</string>
     <string name="consigne1">Veuillez poser la gourde vide sur le socle </string>
-    <string name="gourde_calibree">Gourde calibrée </string>
+    <string name="gourde_calibree">Gourde calibrée ! </string>
     <string name="nom_gourde">Nom de la gourde</string>
     <string name="nb_cl"> Nombre de centilitre (cl) que peut contenir la gourde </string>
     <string name="valider">Valider</string>

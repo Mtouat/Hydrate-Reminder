@@ -42,28 +42,41 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/fond_boutons"
             android:text="@string/oui"
-            android:textColor="@color/texte_appli" />
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_non_notif_lum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@color/fond_boutons"
             android:text="@string/non"
-            android:textColor="@color/texte_appli" />
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp"
+
+            />
     </LinearLayout>
 
     <RadioGroup
         android:id="@+id/groupe_couleurs"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:textSize="20sp"
+        android:layout_gravity="center">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+           >
 
             <Button
                 android:id="@+id/btn_bleu"
@@ -136,14 +149,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/couleur_choisie" />
+            android:text="@string/couleur_choisie"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:backgroundTint="@color/fond_boutons"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp"/>
 
         <TextView
             android:id="@+id/tV_en_attendant"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="TextView" />
+            android:text="TextView"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:textSize="20sp"/>
 
     </LinearLayout>
 
@@ -152,6 +173,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/valider"
-        app:iconPadding="8dp" />
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
 </LinearLayout>

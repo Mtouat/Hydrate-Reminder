@@ -38,23 +38,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/luminosite"
+        android:layout_weight="1"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
         android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_vibrations"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/vibrations"
         android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_audio_son"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:layout_weight="1"
+        android:backgroundTint="@color/fond_boutons"
         android:text="@string/audio_sonneries"
         android:textColor="@color/texte_appli"
-        android:backgroundTint="@color/fond_boutons"/>
+        android:textSize="20sp" />
 
 </LinearLayout>

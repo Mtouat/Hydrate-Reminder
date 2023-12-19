@@ -34,14 +34,24 @@
 
     <Button
         android:id="@+id/btn_gourde1"
+        android:text="@string/gourde1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/gourde1" />
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_ajouter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ajouter" />
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="30sp"
+        android:backgroundTint="@color/fond_boutons"
+        android:text="@string/ajouter"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
 </LinearLayout>

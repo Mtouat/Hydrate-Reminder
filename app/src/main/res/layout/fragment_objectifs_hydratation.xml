@@ -38,52 +38,80 @@
         android:layout_height="57dp"
         android:ems="10"
         android:inputType="number"
-        android:text="@string/nb_cl_par_jour" />
+        android:text="@string/nb_cl_par_jour"
+        android:layout_marginTop="35sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tV_min_et_recommande"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/min_et_reco" />
+        android:text="@string/min_et_reco"
+        android:layout_marginTop="15sp"
+        android:layout_marginBottom="10sp"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/tV_rappels"
         android:layout_width="match_parent"
-        android:layout_height="34dp"
-        android:text="@string/rappels" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25sp"
+        android:layout_marginBottom="20sp"
+        android:text="@string/rappels"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="211dp">
+        android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/rB_30min"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/trente_min" />
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20sp"
+            android:text="@string/trente_min"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rB_1h"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/une_heure" />
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20sp"
+            android:text="@string/une_heure"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
         <RadioButton
             android:id="@+id/rB_2h"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/deux_heures" />
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="20sp"
+            android:text="@string/deux_heures"
+            android:textColor="@color/texte_appli"
+            android:textSize="20sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="15sp"
+            android:layout_marginBottom="30sp"
+            android:textSize="20sp" >
 
             <RadioButton
                 android:id="@+id/rB_perso_temps"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
+                android:textColor="@color/texte_appli"
                 android:text="@string/personalisation" />
 
             <EditText
@@ -95,14 +123,18 @@
                 android:inputType="number"
                 android:text="@string/espace_perso"
                 android:textAlignment="center"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:textColor="@color/texte_appli"
+                />
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/min" />
+                android:text="@string/min"
+                android:textColor="@color/texte_appli"
+                />
         </LinearLayout>
 
     </RadioGroup>
