@@ -59,5 +59,12 @@ public class Changement_de_gourde extends Fragment {
             }
         });
 
+        binding.iVRetourCdg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
+
     }
 }

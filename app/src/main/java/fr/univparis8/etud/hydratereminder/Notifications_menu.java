@@ -75,7 +75,12 @@ public class Notifications_menu extends Fragment {
             }
         });
 
-
+        binding.iVRetourNm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
 
     }
 }

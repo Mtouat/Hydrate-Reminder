@@ -82,6 +82,13 @@ public class Notifs_lumineuses extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.iVRetourNl.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
     }
 
 }

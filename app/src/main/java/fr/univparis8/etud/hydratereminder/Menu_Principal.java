@@ -72,5 +72,12 @@ public class Menu_Principal extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.iVRetourMp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
     }
 }

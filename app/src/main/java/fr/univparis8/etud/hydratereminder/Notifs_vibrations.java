@@ -78,6 +78,13 @@ public class Notifs_vibrations extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        binding.iVRetourNv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
     }
 
 }
