@@ -31,6 +31,7 @@ public class Objectifs_hydratation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentObjectifsHydratationBinding.inflate(inflater, container, false);
+
         return binding.getRoot();
     }
 
@@ -48,7 +49,6 @@ public class Objectifs_hydratation extends Fragment {
                 fragmentTransaction.commit();
             }
         });
-
 
     }
 }

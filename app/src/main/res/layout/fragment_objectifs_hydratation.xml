@@ -38,7 +38,7 @@
         android:layout_height="57dp"
         android:ems="10"
         android:inputType="number"
-        android:text="@string/nb_cl_par_jour"
+        android:hint="@string/nb_cl_par_jour"
         android:layout_marginTop="35sp"
         android:layout_marginBottom="10sp"
         android:textColor="@color/texte_appli"
