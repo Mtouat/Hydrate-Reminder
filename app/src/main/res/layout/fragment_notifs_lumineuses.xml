@@ -12,27 +12,27 @@
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="84dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/iV_retour_nl"
-            android:layout_width="47dp"
-            android:layout_height="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:src="@android:drawable/btn_dialog" />
 
         <TextView
             android:id="@+id/tV_notifs_lumineuses"
-            android:layout_width="306dp"
-            android:layout_height="59dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/notifs_lumineuses" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="69dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
@@ -40,18 +40,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/fond_boutons"
             android:text="@string/oui"
-            android:textColor="@color/texte_appli"
-            android:backgroundTint="@color/fond_boutons"/>
+            android:textColor="@color/texte_appli" />
 
         <Button
             android:id="@+id/btn_non_notif_lum"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:backgroundTint="@color/fond_boutons"
             android:text="@string/non"
-            android:textColor="@color/texte_appli"
-            android:backgroundTint="@color/fond_boutons"/>
+            android:textColor="@color/texte_appli" />
     </LinearLayout>
 
     <RadioGroup
@@ -61,7 +61,7 @@
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
-            android:layout_height="126dp">
+            android:layout_height="wrap_content">
 
             <Button
                 android:id="@+id/btn_bleu"
@@ -126,18 +126,19 @@
     <LinearLayout
         android:id="@+id/couleur_choisie"
         android:layout_width="match_parent"
-        android:layout_height="389dp"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <TextView
             android:id="@+id/tV_couleur_choisies"
-            android:layout_width="209dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:text="@string/couleur_choisie" />
 
         <TextView
             android:id="@+id/tV_en_attendant"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="TextView" />
@@ -148,7 +149,6 @@
         android:id="@+id/btn_valider_notif_lum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
         android:text="@string/valider"
         app:iconPadding="8dp" />
 
