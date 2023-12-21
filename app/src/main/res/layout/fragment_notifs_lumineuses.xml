@@ -139,7 +139,7 @@
     </RadioGroup>
 
     <LinearLayout
-        android:id="@+id/couleur_choisie"
+        android:id="@+id/choix_couleur"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -157,7 +157,7 @@
             android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/tV_en_attendant"
+            android:id="@+id/tV_couleur_choisie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
