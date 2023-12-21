@@ -45,18 +45,19 @@
 
         <ImageView
             android:id="@+id/gourde_niveau"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="253dp"
+            android:layout_height="306dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/gourde" />
 
 
-        <ImageView
-            android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/graph_suivi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            app:srcCompat="@drawable/graphique_image" />
+            android:layout_margin="15sp"
+            />
 
 
     </LinearLayout>

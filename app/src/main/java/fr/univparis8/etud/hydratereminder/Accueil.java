@@ -1,5 +1,6 @@
 package fr.univparis8.etud.hydratereminder;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,15 +10,22 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
-import android.view.Menu;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.github.mikephil.charting.data.BarData;
+import com.github.mikephil.charting.data.BarDataSet;
+import com.github.mikephil.charting.data.BarEntry;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import fr.univparis8.etud.hydratereminder.databinding.FragmentAccueilBinding;
 
 public class Accueil extends Fragment {
-
     private FragmentAccueilBinding binding;
+    private ArrayList<Float> donnees_graph;
+
     public static Accueil newInstance() {
         Accueil fragment = new Accueil();
         return fragment;
@@ -33,6 +41,33 @@ public class Accueil extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentAccueilBinding.inflate(inflater,container, false);
+
+        ArrayList<BarEntry> entrees_barres = new ArrayList<>();
+        this.donnees_graph = new ArrayList<>();
+        this.donnees_graph.add( (float) 4.0);
+        this.donnees_graph.add( (float) 1.3);
+        this.donnees_graph.add( (float) 4.1);
+        this.donnees_graph.add( (float) 1.8);
+        this.donnees_graph.add( (float) 2.5);
+        this.donnees_graph.add( (float) 3.2);
+        this.donnees_graph.add( (float) 0.5);
+
+        for (int i = 0; i<this.donnees_graph.size(); i++){
+
+            BarEntry barEntry = new BarEntry(i,this.donnees_graph.get(i));
+            entrees_barres.add(barEntry);
+        }
+
+        BarDataSet barDataSet = new BarDataSet(entrees_barres, "Consommation");
+
+        barDataSet.setColors(Color.BLUE);
+        barDataSet.setDrawValues(false);
+
+        binding.graphSuivi.setData(new BarData(barDataSet));
+        binding.graphSuivi.animateY(3000);
+        binding.graphSuivi.getDescription().setText(getString(R.string.titre_graph));
+        binding.graphSuivi.getDescription().setTextColor(R.color.texte_appli);
+
         return binding.getRoot();
     }
 

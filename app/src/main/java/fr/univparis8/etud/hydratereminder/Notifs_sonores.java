@@ -1,5 +1,6 @@
 package fr.univparis8.etud.hydratereminder;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -18,6 +19,7 @@ import fr.univparis8.etud.hydratereminder.databinding.FragmentNotifsSonoresBindi
 
 public class Notifs_sonores extends Fragment {
 
+    MediaPlayer mediaPlayer;
     FragmentNotifsSonoresBinding binding;
     public static Notifs_sonores newInstance() {
         Notifs_sonores fragment = new Notifs_sonores();
@@ -39,6 +41,8 @@ public class Notifs_sonores extends Fragment {
 
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
+
+        this.mediaPlayer = MediaPlayer.create(getContext(), R.raw.warriors);
 
         return binding.getRoot();
     }
@@ -85,6 +89,13 @@ public class Notifs_sonores extends Fragment {
             @Override
             public void onClick(View v) {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
+
+        binding.iVNotifSon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mediaPlayer.start();
             }
         });
     }
