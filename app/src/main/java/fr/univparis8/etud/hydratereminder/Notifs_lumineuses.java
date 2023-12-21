@@ -1,5 +1,6 @@
 package fr.univparis8.etud.hydratereminder;
 
+import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -94,6 +95,58 @@ public class Notifs_lumineuses extends Fragment {
             @Override
             public void onClick(View v) {
                 binding.tVCouleurChoisie.setText(binding.btnBleu.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnBleu.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+            }
+        });
+
+        binding.btnOrange.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnOrange.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnOrange.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+
+            }
+        });
+
+        binding.btnVert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnVert.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnVert.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+            }
+        });
+
+        binding.btnRouge.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnRouge.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnRouge.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+            }
+        });
+
+        binding.btnViolet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnViolet.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnViolet.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+            }
+        });
+
+        binding.btnJaune.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnJaune.getText());
+                binding.tVCouleurChoisie.setTextColor(binding.btnJaune.getTextColors());
+                binding.tVCouleurChoisie.setBackgroundColor(Color.BLACK);
             }
         });
     }

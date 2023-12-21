@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">HydrateReminder</string>
 
+    <string name="retour_page_prec"> Retour à la page précédente</string>
     //Accueil
     <string name="obj_semaine">Cette semaine (total) :  x /objectif</string>
     <string name="obj_mois">Ce mois (total) :  x /objectif</string>
@@ -49,6 +50,7 @@
     <string name="rouge">Rouge</string>
     <string name="violet">Violet </string>
     <string name="jaune">Jaune </string>
+    <string name="selection_couleur">Selectionner une couleur</string>
 
     //Notifs vibrations
     <string name="notifs_vibrations">Notification vibratoires</string>

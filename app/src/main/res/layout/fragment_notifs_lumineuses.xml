@@ -7,7 +7,8 @@
     android:orientation="vertical"
     tools:context=".Notifs_lumineuses"
     android:background="@color/fond_appli"
-    android:theme="@style/text_color">
+    android:theme="@style/text_color"
+   >
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -21,6 +22,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/retour_page_prec"
             android:src="@android:drawable/btn_dialog" />
 
         <TextView
@@ -75,64 +77,81 @@
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-           >
+            android:layout_height="match_parent">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_bleu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/bleu"
                 android:text="@string/bleu"
-                android:textSize="0sp" />
+                android:textColor="@color/bleu"
+                android:textSize="0sp"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_orange"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/orange"
                 android:text="@string/orange"
-                android:textSize="0sp" />
+                android:textColor="@color/orange"
+                android:textSize="0sp"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_vert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/vert"
                 android:text="@string/vert"
+                android:textColor="@color/vert"
                 android:textSize="0sp"
                 app:layout_column="2"
-                app:layout_row="0" />
+                app:layout_row="0"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_rouge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/rouge"
                 android:text="@string/rouge"
+                android:textColor="@color/rouge"
                 android:textSize="0sp"
                 app:layout_column="3"
-                app:layout_row="0" />
+                app:layout_row="0"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_jaune"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/jaune"
                 android:text="@string/jaune"
+                android:textColor="@color/jaune"
                 android:textSize="0sp"
                 app:layout_column="2"
-                app:layout_row="1" />
+                app:layout_row="1"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/btn_violet"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/violet"
                 android:text="@string/violet"
+                android:textColor="@color/violet"
                 android:textSize="0sp"
                 app:layout_column="1"
-                app:layout_row="1" />
+                app:layout_row="1"
+                app:strokeColor="@color/texte_appli"
+                app:strokeWidth="2sp" />
 
         </androidx.gridlayout.widget.GridLayout>
 
@@ -148,23 +167,23 @@
             android:id="@+id/tV_couleur"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/couleur_choisie"
             android:layout_marginTop="15sp"
             android:layout_marginBottom="30sp"
+            android:layout_weight="2"
             android:backgroundTint="@color/fond_boutons"
+            android:text="@string/couleur_choisie"
             android:textColor="@color/texte_appli"
-            android:textSize="20sp"/>
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/tV_couleur_choisie"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="TextView"
             android:layout_marginTop="15sp"
             android:layout_marginBottom="30sp"
-            android:textSize="20sp"/>
+            android:layout_weight="1"
+            android:text="@string/selection_couleur"
+            android:textSize="20sp" />
 
     </LinearLayout>
 
