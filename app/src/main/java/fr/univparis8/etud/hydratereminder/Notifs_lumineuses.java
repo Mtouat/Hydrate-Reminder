@@ -37,7 +37,7 @@ public class Notifs_lumineuses extends Fragment {
         binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
 
         binding.groupeCouleurs.setVisibility(View.INVISIBLE);
-        binding.couleurChoisie.setVisibility(View.INVISIBLE);
+        binding.choixCouleur.setVisibility(View.INVISIBLE);
 
         return binding.getRoot();
     }
@@ -54,7 +54,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.btnOuiNotifLum.setStrokeColorResource(R.color.texte_appli);
 
                 binding.groupeCouleurs.setVisibility(View.VISIBLE);
-                binding.couleurChoisie.setVisibility(View.VISIBLE);
+                binding.choixCouleur.setVisibility(View.VISIBLE);
             }
         });
 
@@ -67,7 +67,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
 
                 binding.groupeCouleurs.setVisibility(View.INVISIBLE);
-                binding.couleurChoisie.setVisibility(View.INVISIBLE);
+                binding.choixCouleur.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -87,6 +87,13 @@ public class Notifs_lumineuses extends Fragment {
             @Override
             public void onClick(View v) {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
+            }
+        });
+
+        binding.btnBleu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                binding.tVCouleurChoisie.setText(binding.btnBleu.getText());
             }
         });
     }
