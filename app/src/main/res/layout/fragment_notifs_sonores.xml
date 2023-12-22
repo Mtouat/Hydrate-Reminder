@@ -132,7 +132,7 @@
                 android:textSize="20sp"/>
 
             <ImageView
-                android:id="@+id/iV_notif_son3"
+                android:id="@+id/iV_notif_son2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:src="@drawable/son_image"
@@ -141,13 +141,13 @@
                 android:textSize="20sp"/>
 
             <ImageView
-                android:id="@+id/iV_notif_son2"
+                android:id="@+id/iV_notif_son3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/son_image"
                 android:layout_marginTop="15sp"
                 android:layout_marginBottom="20sp"
-                android:textSize="20sp"/>
+                android:src="@drawable/son_image"
+                android:textSize="20sp" />
 
             <ImageView
                 android:id="@+id/iV_sons_persos"

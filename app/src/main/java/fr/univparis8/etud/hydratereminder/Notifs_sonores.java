@@ -13,13 +13,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import java.util.Objects;
-
 import fr.univparis8.etud.hydratereminder.databinding.FragmentNotifsSonoresBinding;
 
 public class Notifs_sonores extends Fragment {
 
-    MediaPlayer mediaPlayer;
+    MediaPlayer mediaPlayer1;
+    MediaPlayer mediaPlayer2;
+    MediaPlayer mediaPlayer3;
+
     FragmentNotifsSonoresBinding binding;
     public static Notifs_sonores newInstance() {
         Notifs_sonores fragment = new Notifs_sonores();
@@ -42,7 +43,9 @@ public class Notifs_sonores extends Fragment {
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-        this.mediaPlayer = MediaPlayer.create(getContext(), R.raw.warriors);
+        this.mediaPlayer1 = MediaPlayer.create(getContext(), R.raw.warriors);
+        this.mediaPlayer2 = MediaPlayer.create(getContext(), R.raw.jinglebellrock);
+        this.mediaPlayer3 = MediaPlayer.create(getContext(), R.raw.sonneriesamsung);
 
         return binding.getRoot();
     }
@@ -70,6 +73,22 @@ public class Notifs_sonores extends Fragment {
                 binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
                 binding.groupeSons.setVisibility(View.INVISIBLE);
+
+                if(mediaPlayer1.isPlaying()){
+                    mediaPlayer1.pause();
+                    mediaPlayer1.seekTo(0);
+                }
+                
+                if(mediaPlayer2.isPlaying()){
+                    mediaPlayer2.pause();
+                    mediaPlayer2.seekTo(0);
+                }
+
+                if(mediaPlayer3.isPlaying()){
+                    mediaPlayer3.pause();
+                    mediaPlayer3.seekTo(0);
+                }
+
             }
         });
 
@@ -82,6 +101,9 @@ public class Notifs_sonores extends Fragment {
                 fragmentTransaction.replace(R.id.fragment_container_view, accueil);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
+                mediaPlayer1.stop();
+                mediaPlayer2.stop();
+                mediaPlayer3.stop();
             }
         });
 
@@ -89,13 +111,60 @@ public class Notifs_sonores extends Fragment {
             @Override
             public void onClick(View v) {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
+                mediaPlayer1.stop();
+                mediaPlayer2.stop();
+                mediaPlayer3.stop();
             }
         });
 
         binding.iVNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mediaPlayer.start();
+                if(mediaPlayer2.isPlaying()){
+                    mediaPlayer2.pause();
+                    mediaPlayer2.seekTo(0);
+                }
+
+                if(mediaPlayer3.isPlaying()){
+                    mediaPlayer3.pause();
+                    mediaPlayer3.seekTo(0);
+                }
+
+                mediaPlayer1.start();
+            }
+
+        });
+
+
+        binding.iVNotifSon2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer1.isPlaying()){
+                    mediaPlayer1.pause();
+                    mediaPlayer1.seekTo(0);
+                }
+                if(mediaPlayer3.isPlaying()){
+                    mediaPlayer3.pause();
+                    mediaPlayer3.seekTo(0);
+                }
+                mediaPlayer2.start();
+            }
+        });
+
+        binding.iVNotifSon3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mediaPlayer1.isPlaying()){
+                    mediaPlayer1.pause();
+                    mediaPlayer1.seekTo(0);
+                }
+
+                if(mediaPlayer2.isPlaying()){
+                    mediaPlayer2.pause();
+                    mediaPlayer2.seekTo(0);
+                }
+
+                mediaPlayer3.start();
             }
         });
     }

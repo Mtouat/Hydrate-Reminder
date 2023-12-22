@@ -14,7 +14,7 @@
     <string name="def_obj">Définition des objectifs d’hydratation </string>
     <string name="perso_appli_et_access">Personnalisation et accessibilité de l’application </string>
     <string name="dessin_gourde">Image d\'une gourde avec son niveau</string>
-    <string name="dessin_goutte_eau"> Image d'une goutte d'eau</string>
+    <string name="dessin_goutte_eau"> Image d\'une goutte d\'eau</string>
 
     //Changement de gourde
     <string name="gourde1">Gourde 1</string>
