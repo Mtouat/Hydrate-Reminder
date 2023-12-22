@@ -13,6 +13,8 @@
     <string name="notif">Notifications (Luminosité, vibration, audio) </string>
     <string name="def_obj">Définition des objectifs d’hydratation </string>
     <string name="perso_appli_et_access">Personnalisation et accessibilité de l’application </string>
+    <string name="dessin_gourde">Image d\'une gourde avec son niveau</string>
+    <string name="dessin_goutte_eau"> Image d'une goutte d'eau</string>
 
     //Changement de gourde
     <string name="gourde1">Gourde 1</string>
@@ -32,6 +34,8 @@
     <string name="nom_gourde">Nom de la gourde</string>
     <string name="nb_cl"> Nombre de centilitre (cl) que peut contenir la gourde </string>
     <string name="valider">Valider</string>
+    <string name="fleche_bas">Flèche en direction du socle vers le bas</string>
+    <string name="socle">Socle</string>
 
     //Notifications
     <string name="notifications">Notifications</string>

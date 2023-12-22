@@ -49,6 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/niveau_Actuel"
         android:src="@drawable/badge" />
 
     <TextView
@@ -68,13 +69,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/badge" />
+            android:src="@drawable/badge"
+            android:contentDescription="@string/badges_acquis"/>
 
         <ImageView
             android:id="@+id/iV_badge4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:contentDescription="@string/badges_acquis"
             android:src="@drawable/badge" />
     </LinearLayout>
 
@@ -95,6 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/badges_non_acquis"
             android:src="@drawable/badge" />
 
         <ImageView
@@ -102,6 +106,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:contentDescription="@string/badges_non_acquis"
             android:src="@drawable/badge" />
     </LinearLayout>
 
