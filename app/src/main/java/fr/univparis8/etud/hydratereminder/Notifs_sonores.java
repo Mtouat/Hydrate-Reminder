@@ -21,6 +21,7 @@ public class Notifs_sonores extends Fragment {
     MediaPlayer mediaPlayer2;
     MediaPlayer mediaPlayer3;
 
+
     FragmentNotifsSonoresBinding binding;
     public static Notifs_sonores newInstance() {
         Notifs_sonores fragment = new Notifs_sonores();
@@ -42,6 +43,7 @@ public class Notifs_sonores extends Fragment {
 
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
+
 
         this.mediaPlayer1 = MediaPlayer.create(getContext(), R.raw.warriors);
         this.mediaPlayer2 = MediaPlayer.create(getContext(), R.raw.jinglebellrock);

@@ -9,13 +9,17 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.SeekBar;
 
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
+import com.john.waveview.WaveView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,6 +72,8 @@ public class Accueil extends Fragment {
         binding.graphSuivi.getDescription().setText(getString(R.string.titre_graph));
         binding.graphSuivi.getDescription().setTextColor(R.color.texte_appli);
 
+
+
         return binding.getRoot();
     }
 
@@ -103,5 +109,10 @@ public class Accueil extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+    }
+
+    private void remplir_gourde (int niveau){
+
+        int couleur_bleue = Color.argb(255,0,0,255);
     }
 }
