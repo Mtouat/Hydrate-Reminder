@@ -30,6 +30,7 @@ public class Notifs_sonores extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
     }
 
