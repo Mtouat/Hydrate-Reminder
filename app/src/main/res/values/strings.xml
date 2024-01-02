@@ -7,14 +7,16 @@
     <string name="obj_semaine">Cette semaine (total) :  x /objectif</string>
     <string name="obj_mois">Ce mois (total) :  x /objectif</string>
     <string name="parametres"> Paramètres</string>
+    <string name="dessin_gourde">Image d\'une gourde avec son niveau</string>
+    <string name="dessin_goutte_eau">Image d\'une goutte d\'eau</string>
 
     //Menu principal
-    <string name="chgmt_gourde"> Changement / ajout de gourde</string>
+    <string name="chgmt_gourde">Changement / ajout de gourde</string>
     <string name="notif">Notifications (Luminosité, vibration, audio) </string>
     <string name="def_obj">Définition des objectifs d’hydratation </string>
     <string name="perso_appli_et_access">Personnalisation et accessibilité de l’application </string>
-    <string name="dessin_gourde">Image d\'une gourde avec son niveau</string>
-    <string name="dessin_goutte_eau"> Image d\'une goutte d\'eau</string>
+    <string name="btn_tests_arduino">Test avec carte Aduino (à supprimer) </string>
+
 
     //Changement de gourde
     <string name="gourde1">Gourde 1</string>
@@ -44,11 +46,11 @@
     <string name="audio_sonneries">Audio et sonneries </string>
 
     // Notifs lumineuses
-    <string name="notifs_lumineuses"> Notifications lumineuses </string>
+    <string name="notifs_lumineuses">Notifications lumineuses </string>
     <string name="oui">Oui</string>
     <string name="non">Non</string>
     <string name="couleur_choisie">La couleur choisie est : </string>
-    <string name="bleu"> Bleu </string>
+    <string name="bleu">Bleu </string>
     <string name="orange">Orange </string>
     <string name="vert">Vert </string>
     <string name="rouge">Rouge</string>
@@ -64,9 +66,9 @@
 
     //Notifs audios
     <string name="notifs_sonores">Notifications sonores </string>
-    <string name="audio1"> Audio1</string>
-    <string name="audio2"> Audio2</string>
-    <string name="audio3"> Audio3</string>
+    <string name="audio1">Audio1</string>
+    <string name="audio2">Audio2</string>
+    <string name="audio3">Audio3</string>
     <string name="audio_perso"> Mes audios persos </string>
 
     //Objectifs d'hydratation
@@ -75,8 +77,8 @@
     <string name="min_et_reco">Minimum : 100cl \nRecommandé : 150cl</string>
     <string name="rappels">Rappels tous les : </string>
     <string name="trente_min">30 minutes</string>
-    <string name="une_heure"> 1 heure</string>
-    <string name="deux_heures"> 2 heures</string>
+    <string name="une_heure">1 heure</string>
+    <string name="deux_heures">2 heures</string>
     <string name="min">min</string>
     <string name="personalisation">Personnalisation du temps</string>
     <string name="espace_perso"> 0123... </string>
@@ -84,6 +86,11 @@
     //Graph
     <string name="titre_graph">Consommation sur la semaine</string>
 
-
+    //Tests Arduino
+    <string name="titre_test_arduino">Test avec la carte Arduino</string>
+    <string name="connection">Connection </string>
+    <string name="deconnection">Deconnection</string>
+    <string name="message_co">Statut </string>
+    <string name="en_attendant">En attendant </string>
 
 </resources>

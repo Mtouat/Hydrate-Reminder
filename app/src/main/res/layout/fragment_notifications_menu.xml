@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_test"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".Notifications_menu"
     android:background="@color/fond_appli"
+    android:orientation="vertical"
     android:theme="@style/text_color"
-    >
+    tools:context=".Notifications_menu">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
@@ -37,11 +37,11 @@
         android:id="@+id/btn_luminosite"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/luminosite"
-        android:layout_weight="1"
         android:layout_marginTop="35sp"
         android:layout_marginBottom="30sp"
+        android:layout_weight="1"
         android:backgroundTint="@color/fond_boutons"
+        android:text="@string/luminosite"
         android:textColor="@color/texte_appli"
         android:textSize="20sp" />
 

@@ -73,11 +73,24 @@ public class Menu_Principal extends Fragment {
             }
         });
 
+       binding.btnTestArduino.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               FragmentManager fragmentManager = getParentFragmentManager();
+               FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+               Tests_arduino tests_arduino = new Tests_arduino();
+               fragmentTransaction.replace(R.id.fragment_container_view, tests_arduino);
+               fragmentTransaction.addToBackStack(null);
+               fragmentTransaction.commit();
+           }
+       });
+
         binding.iVRetourMp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
             }
         });
+
     }
 }
