@@ -34,9 +34,11 @@ public class Notifs_lumineuses extends Fragment {
 
         binding = FragmentNotifsLumineusesBinding.inflate(inflater, container, false);
 
+        //paramètrage des boutons couleur + taille de police
         binding.btnNonNotifLum.setStrokeWidth(10);
         binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
 
+        // quand on arrive sur la page on ne voit pas le groupe de bouton
         binding.groupeCouleurs.setVisibility(View.INVISIBLE);
         binding.choixCouleur.setVisibility(View.INVISIBLE);
 
@@ -46,6 +48,7 @@ public class Notifs_lumineuses extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
 
+        //si on clique sur "oui", ils apparaissent
         binding.btnOuiNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +62,7 @@ public class Notifs_lumineuses extends Fragment {
             }
         });
 
+        //si on appuie sur "non", ils disparraissent
         binding.btnNonNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +76,7 @@ public class Notifs_lumineuses extends Fragment {
             }
         });
 
+        // quand on appuie sur "valider", on est renvoyé vers l'accueil
         binding.btnValiderNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -84,6 +89,7 @@ public class Notifs_lumineuses extends Fragment {
             }
         });
 
+        //en appuyant sur la croix on revient à la page précédente
         binding.iVRetourNl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

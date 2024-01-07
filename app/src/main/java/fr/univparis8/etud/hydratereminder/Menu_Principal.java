@@ -24,6 +24,7 @@ public class Menu_Principal extends Fragment {
 
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class Menu_Principal extends Fragment {
 
         super.onViewCreated(view, savedInstanceState);
 
+        //permet d'aller vers changement de gourde
         binding.btnChgmtGourde.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,6 +51,7 @@ public class Menu_Principal extends Fragment {
             }
         });
 
+        // permet d'aller vers le menu des notifications
         binding.btnNotif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +64,7 @@ public class Menu_Principal extends Fragment {
             }
         });
 
+        //permet d'aller vers la page des objectifs d'hydratation
         binding.btnDefObj.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -73,6 +77,7 @@ public class Menu_Principal extends Fragment {
             }
         });
 
+        //permet d'aller vers la page de test arduino
        binding.btnTestArduino.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {

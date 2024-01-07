@@ -48,6 +48,7 @@ public class Recalibrage1 extends Fragment {
             }
         });
 
+        //en appuyant sur la croix on revient à la page précédente
         binding.iVRetourR1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

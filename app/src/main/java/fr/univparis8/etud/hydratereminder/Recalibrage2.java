@@ -40,6 +40,7 @@ public class Recalibrage2 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
+        // quand on appuie sur "valider", on est renvoyé vers l'accueil
         binding.btnValider.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -52,6 +53,7 @@ public class Recalibrage2 extends Fragment {
             }
         });
 
+        //en appuyant sur la croix on revient à la page précédente
         binding.iVRetourR2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

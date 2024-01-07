@@ -38,6 +38,7 @@ public class Objectifs_hydratation extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
 
+        // quand on appuie sur "valider", on est renvoyé vers l'accueil
         binding.btnValiderObjHyd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +51,7 @@ public class Objectifs_hydratation extends Fragment {
             }
         });
 
+        //en appuyant sur la croix on revient à la page précédente
         binding.iVRetourOh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

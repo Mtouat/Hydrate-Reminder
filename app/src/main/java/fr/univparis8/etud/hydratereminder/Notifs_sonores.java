@@ -45,7 +45,7 @@ public class Notifs_sonores extends Fragment {
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-
+        //on lie les chansons aux variables
         this.mediaPlayer1 = MediaPlayer.create(getContext(), R.raw.warriors);
         this.mediaPlayer2 = MediaPlayer.create(getContext(), R.raw.jinglebellrock);
         this.mediaPlayer3 = MediaPlayer.create(getContext(), R.raw.sonneriesamsung);
@@ -67,6 +67,7 @@ public class Notifs_sonores extends Fragment {
             }
         });
 
+        // Si on appuie sur "non", les boutons deviennent invisible et la musique s'arrete
         binding.btnNonNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -76,6 +77,7 @@ public class Notifs_sonores extends Fragment {
                 binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
                 binding.groupeSons.setVisibility(View.INVISIBLE);
+
 
                 if(mediaPlayer1.isPlaying()){
                     mediaPlayer1.pause();
@@ -95,6 +97,7 @@ public class Notifs_sonores extends Fragment {
             }
         });
 
+        //Si on appuie sur "valider", on revient vers l'accueil et la musique s'arrete
         binding.btnValiderNotifsSons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -110,6 +113,7 @@ public class Notifs_sonores extends Fragment {
             }
         });
 
+        //Si on appuie sur la croix, on revient sur la dernière page et la musique s'arrete
         binding.ivRetourNs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -120,6 +124,7 @@ public class Notifs_sonores extends Fragment {
             }
         });
 
+        //Si on appuis sur la première image, le media se lance et les autres se mettent sur pause s'ils ont été lancé
         binding.iVNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -138,7 +143,7 @@ public class Notifs_sonores extends Fragment {
 
         });
 
-
+        //Si on appuis sur la deuxième image, le media se lance et les autres se mettent sur pause s'ils ont été lancé
         binding.iVNotifSon2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -154,6 +159,7 @@ public class Notifs_sonores extends Fragment {
             }
         });
 
+        //Si on appuis sur la troisième image, le media se lance et les autres se mettent sur pause s'ils ont été lancé
         binding.iVNotifSon3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

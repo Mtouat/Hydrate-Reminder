@@ -24,6 +24,7 @@ public class Notifs_vibrations extends Fragment {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
     }
 
@@ -32,7 +33,7 @@ public class Notifs_vibrations extends Fragment {
                              Bundle savedInstanceState) {
 
         binding = FragmentNotifsVibrationsBinding.inflate(inflater, container, false);
-
+        // quand on arrive sur la page on ne voit pas le groupe de bouton
         binding.groupeVibrations.setVisibility(View.INVISIBLE);
 
         binding.btnNonNotifVib.setStrokeWidth(10);
@@ -41,6 +42,7 @@ public class Notifs_vibrations extends Fragment {
         return binding.getRoot();
     }
 
+    //si on clique sur "oui", ils apparaissent
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle SavedInstanceState){
         binding.btnOuiNotifVib.setOnClickListener(new View.OnClickListener() {
@@ -55,6 +57,7 @@ public class Notifs_vibrations extends Fragment {
             }
         });
 
+        //si on appuie sur "non", ils disparraissent
         binding.btnNonNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,6 +70,7 @@ public class Notifs_vibrations extends Fragment {
             }
         });
 
+        // quand on appuie sur "valider", on est renvoyé vers l'accueil
         binding.btnValiderNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -79,6 +83,7 @@ public class Notifs_vibrations extends Fragment {
             }
         });
 
+        //en appuyant sur la croix on revient à la page précédente
         binding.iVRetourNv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -25,8 +25,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import fr.univparis8.etud.hydratereminder.databinding.FragmentAccueilBinding;
-
+/*
+Nous avons utilisé les Fragment car nous nous sommes inspiré du cours d'Open Classroom qui les
+ utilisait et aussi car nous trouvions ça plus simple
+*/
 public class Accueil extends Fragment {
+
+    //Le binding permet de récupérer les variables présente dans le xml, il est équivalent finViewById
     private FragmentAccueilBinding binding;
     private ArrayList<Float> donnees_graph;
 
@@ -45,7 +50,7 @@ public class Accueil extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         binding = FragmentAccueilBinding.inflate(inflater,container, false);
-
+        // Il s'agit des données traitées par le graphique
         ArrayList<BarEntry> entrees_barres = new ArrayList<>();
         this.donnees_graph = new ArrayList<>();
         this.donnees_graph.add( (float) 4.0);
@@ -57,11 +62,12 @@ public class Accueil extends Fragment {
         this.donnees_graph.add( (float) 0.5);
 
         for (int i = 0; i<this.donnees_graph.size(); i++){
-
+        //entrée d'une donnée convertie en barre sur le graph
             BarEntry barEntry = new BarEntry(i,this.donnees_graph.get(i));
             entrees_barres.add(barEntry);
         }
 
+        //Paramètre de toute les barre du graph
         BarDataSet barDataSet = new BarDataSet(entrees_barres, "Consommation");
 
         barDataSet.setColors(Color.BLUE);
@@ -81,10 +87,11 @@ public class Accueil extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
 
         super.onViewCreated(view, savedInstanceState);
-
+        //lien vers le menu principal quand on clique sur la molette des paramètre
         binding.btnParametres.setOnClickListener(new View.OnClickListener(){
 
             @Override
+
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -98,6 +105,7 @@ public class Accueil extends Fragment {
             }
         });
 
+        //lien vers la page des badges
         binding.badgeNiveauActuel.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {

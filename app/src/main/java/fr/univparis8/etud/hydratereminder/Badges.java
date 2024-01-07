@@ -38,6 +38,7 @@ public class Badges extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle SavedInstanceState){
 
+        //permet de revenir vers la page d'accueil
         binding.iVRetourB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

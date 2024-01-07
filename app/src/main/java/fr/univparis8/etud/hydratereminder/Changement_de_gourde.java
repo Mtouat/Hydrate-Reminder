@@ -35,6 +35,7 @@ public class Changement_de_gourde extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
 
+        // permet d'aller vers recalibrage1
         binding.btnAjouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,6 +60,7 @@ public class Changement_de_gourde extends Fragment {
             }
         });
 
+         
         binding.iVRetourCdg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

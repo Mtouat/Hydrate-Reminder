@@ -39,6 +39,7 @@ public class Notifications_menu extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view, savedInstanceState);
 
+        //permet d'aller vers la page des notifications sonores
         binding.btnAudioSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +52,7 @@ public class Notifications_menu extends Fragment {
             }
         });
 
+        //permet d'aller vers la page des notofications lumineuses
         binding.btnLuminosite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +65,7 @@ public class Notifications_menu extends Fragment {
             }
         });
 
+        //permet d'aller vers les notifications vibratoires
         binding.btnVibrations.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
