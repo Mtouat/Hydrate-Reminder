@@ -70,6 +70,13 @@
         android:textColor="@color/texte_appli"
         android:textSize="20sp"/>
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/liste_recalibrage"
+
+        />;
+
     <Button
         android:id="@+id/btn_valider"
         android:layout_width="match_parent"

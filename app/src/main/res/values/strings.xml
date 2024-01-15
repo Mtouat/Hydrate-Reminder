@@ -31,7 +31,7 @@
 
     //Recalibrage 1 et 2
     <string name="recalibrage">Recalibrage</string>
-    <string name="consigne1">Veuillez poser la gourde vide sur le socle </string>
+    <string name="consigne1">Poser la gourde vide sur le socle </string>
     <string name="gourde_calibree">Gourde calibrée ! </string>
     <string name="nom_gourde">Nom de la gourde</string>
     <string name="nb_cl"> Nombre de centilitre (cl) que peut contenir la gourde </string>
@@ -74,7 +74,7 @@
     //Objectifs d'hydratation
     <string name="objectif_hydratation">Objectif d\'hydratation</string>
     <string name="nb_cl_par_jour">Nombre de centilitre / jour</string>
-    <string name="min_et_reco">Minimum : 100cl \nRecommandé : 150cl</string>
+    <string name="min_et_reco">Minimum : 1L    \nMaximum : 3,5L </string>
     <string name="rappels">Rappels tous les : </string>
     <string name="trente_min">30 minutes</string>
     <string name="une_heure">1 heure</string>
