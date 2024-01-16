@@ -33,6 +33,7 @@
 
     </LinearLayout>
 
+
     <TextView
         android:id="@+id/tV_gourde_calibree"
         android:layout_width="match_parent"
@@ -57,25 +58,13 @@
         android:textColor="@color/texte_appli"
         android:textSize="20sp" />
 
-    <EditText
-        android:id="@+id/editTextNumberDecimal"
-        android:layout_width="match_parent"
-        android:layout_height="490dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        android:hint="@string/nb_cl"
-        android:layout_marginTop="35sp"
-        android:layout_marginBottom="30sp"
-        android:textColor="@color/texte_appli"
-        android:textSize="20sp"/>
-
     <Spinner
+        android:id="@+id/liste_l_gourde"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/liste_recalibrage"
+        android:layout_weight="1"
+        />
 
-        />;
 
     <Button
         android:id="@+id/btn_valider"

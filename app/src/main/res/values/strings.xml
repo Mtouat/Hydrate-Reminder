@@ -38,6 +38,14 @@
     <string name="valider">Valider</string>
     <string name="fleche_bas">Flèche en direction du socle vers le bas</string>
     <string name="socle">Socle</string>
+    <string-array name="nb_l_array">
+        <item>0.50 L</item>
+        <item>0.75 L</item>
+        <item>1 L </item>
+        <item>1.50 L</item>
+        <item>2.0 L</item>
+        <item>Je ne sais pas </item>
+    </string-array>
 
     //Notifications
     <string name="notifications">Notifications</string>
@@ -92,5 +100,7 @@
     <string name="deconnection">Deconnection</string>
     <string name="message_co">Statut </string>
     <string name="en_attendant">En attendant </string>
+
+
 
 </resources>

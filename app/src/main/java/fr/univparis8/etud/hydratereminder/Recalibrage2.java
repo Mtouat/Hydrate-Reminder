@@ -11,6 +11,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import fr.univparis8.etud.hydratereminder.databinding.FragmentRecalibrage2Binding;
 
@@ -60,5 +62,16 @@ public class Recalibrage2 extends Fragment {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
             }
         });
+
+    /*    Spinner spinner = (Spinner) binding.listeLGourde;
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+                this,
+                binding.,
+                 android.R.layout.simple_spinner_item
+        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+    // Apply the adapter to the spinner.
+        spinner.setAdapter(adapter);
+    }*/
     }
 }
