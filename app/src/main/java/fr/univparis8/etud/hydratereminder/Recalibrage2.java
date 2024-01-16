@@ -14,6 +14,10 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
+import com.github.mikephil.charting.data.BarEntry;
+
+import java.util.ArrayList;
+
 import fr.univparis8.etud.hydratereminder.databinding.FragmentRecalibrage2Binding;
 
 
@@ -36,7 +40,7 @@ public class Recalibrage2 extends Fragment {
                              Bundle savedInstanceState) {
         binding = FragmentRecalibrage2Binding.inflate(inflater, container, false);
         return binding.getRoot();
-
+        
     }
 
     @Override

@@ -30,7 +30,17 @@
             android:layout_height="match_parent"
             android:layout_weight="4"
             android:text="@string/objectif_hydratation" />
+
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/question_hydratation"
+        android:textColor="@color/texte_appli"
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/eTN_cl_par_jour"

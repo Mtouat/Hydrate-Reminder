@@ -24,7 +24,7 @@
             android:src="@android:drawable/btn_dialog" />
 
         <TextView
-            android:id="@+id/tV_Recalibrage"
+            android:id="@+id/tV_Calcul_du_contenant"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="4"
@@ -34,7 +34,7 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tV_consigne_recalibrage"
+        android:id="@+id/tV_Consigne_calcul"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/consigne1"
@@ -47,7 +47,7 @@
         />
 
     <ImageView
-        android:id="@+id/iV_fleche_bas"
+        android:id="@+id/iV_fleche_bas2"
         android:layout_width="184dp"
         android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
@@ -61,20 +61,20 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/iV_socle"
+            android:id="@+id/iV_socle2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="start"
-            android:layout_weight="3"
+            android:layout_weight="4"
             android:contentDescription="@string/socle"
             android:src="@drawable/socle_image" />
 
         <ImageButton
-            android:id="@+id/iB_page_suivante"
+            android:id="@+id/iB_page_suivante2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
-            android:layout_weight="1"
+            android:layout_weight="0.25"
             android:contentDescription="vers page suivante"
             android:src="@android:drawable/ic_media_next" />
 
