@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId = "fr.univparis8.etud.hydratereminder"
         minSdk = 30
-        targetSdk = 31
+        targetSdk = 30
         versionCode = 1
         versionName = "1.0"
 
@@ -35,8 +35,11 @@ android {
 
 dependencies {
 
+    implementation("androidx.fragment:fragment:1.6.2")
+    debugImplementation("androidx.fragment:fragment-testing:1.6.2")
+    implementation("androidx.activity:activity:1.8.2")
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.google.android.material:material:1.10.0")
+    implementation("com.google.android.material:material:1.11.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.gridlayout:gridlayout:1.0.0")
     testImplementation("junit:junit:4.13.2")
