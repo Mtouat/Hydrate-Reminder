@@ -21,7 +21,9 @@ public class Notifs_sonores extends Fragment {
     MediaPlayer mediaPlayer2;
     MediaPlayer mediaPlayer3;
 
+    private String mode_sonnerie="";
     private String instruction = "";
+    private boolean sonnerie = false;
 
     FragmentNotifsSonoresBinding binding;
     public static Notifs_sonores newInstance() {
@@ -41,7 +43,7 @@ public class Notifs_sonores extends Fragment {
 
         binding = FragmentNotifsSonoresBinding.inflate(inflater, container, false);
 
-    //    binding.groupeSons.setVisibility(View.INVISIBLE);
+        binding.groupeAudios.setVisibility(View.INVISIBLE);
 
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
@@ -60,11 +62,12 @@ public class Notifs_sonores extends Fragment {
             @Override
             public void onClick(View v) {
 
+                sonnerie = true;
                 binding.btnNonNotifSon.setStrokeWidth(0);
                 binding.btnOuiNotifSon.setStrokeWidth(10);
                 binding.btnOuiNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-        //        binding.groupeSons.setVisibility(View.VISIBLE);
+               binding.groupeAudios.setVisibility(View.VISIBLE);
 
             }
         });
@@ -74,11 +77,14 @@ public class Notifs_sonores extends Fragment {
             @Override
             public void onClick(View v) {
 
+                sonnerie = false;
+                mode_sonnerie = "0";
+
                 binding.btnOuiNotifSon.setStrokeWidth(0);
                 binding.btnNonNotifSon.setStrokeWidth(10);
                 binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-        //        binding.groupeSons.setVisibility(View.INVISIBLE);
+                binding.groupeAudios.setVisibility(View.INVISIBLE);
 
                 if(mediaPlayer1.isPlaying()){
                     mediaPlayer1.pause();
@@ -102,15 +108,34 @@ public class Notifs_sonores extends Fragment {
         binding.btnValiderNotifsSons.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (sonnerie) {
+                    int RadioID = binding.groupeAudios.getCheckedRadioButtonId();
+
+                    if (RadioID == binding.rBAudio1.getId()) {
+                        mode_sonnerie = "1" + binding.rBAudio1.getText();
+                        instruction = "" + binding.rBAudio1.getText();
+                    } else if (RadioID == binding.rBAudio2.getId()) {
+                        mode_sonnerie = "1" + binding.rBAudio2.getText();
+                        instruction = "" + binding.rBAudio2.getText();
+                    } else if (RadioID == binding.rBAudio3.getId()) {
+                        mode_sonnerie = "1" + binding.rBAudio3.getText();
+                        instruction = "" + binding.rBAudio3.getText();
+                    }
+
+                    ((MainActivity) getActivity()).sendData(instruction);
+                }
+
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Accueil accueil = new Accueil();
                 fragmentTransaction.replace(R.id.fragment_container_view, accueil);
                 fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
-                mediaPlayer1.stop();
+
+                /*mediaPlayer1.stop();
                 mediaPlayer2.stop();
-                mediaPlayer3.stop();
+                mediaPlayer3.stop();*/
 
 
             }
@@ -121,9 +146,10 @@ public class Notifs_sonores extends Fragment {
             @Override
             public void onClick(View v) {
                 requireActivity().getSupportFragmentManager().popBackStackImmediate();
-                mediaPlayer1.stop();
+
+                /*mediaPlayer1.stop();
                 mediaPlayer2.stop();
-                mediaPlayer3.stop();
+                mediaPlayer3.stop();*/
             }
         });
 

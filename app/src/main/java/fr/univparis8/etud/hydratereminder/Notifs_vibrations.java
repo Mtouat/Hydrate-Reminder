@@ -71,6 +71,7 @@ public class Notifs_vibrations extends Fragment {
             public void onClick(View v) {
 
                 vibration = false;
+                mode_vibration = "0";
 
                 binding.btnOuiNotifVib.setStrokeWidth(0);
                 binding.btnNonNotifVib.setStrokeWidth(10);
