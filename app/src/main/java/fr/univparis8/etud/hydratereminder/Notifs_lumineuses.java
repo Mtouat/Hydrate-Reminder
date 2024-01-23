@@ -18,6 +18,10 @@ import fr.univparis8.etud.hydratereminder.databinding.FragmentNotifsLumineusesBi
 public class Notifs_lumineuses extends Fragment {
 
     FragmentNotifsLumineusesBinding binding;
+    private boolean luminosite = false;
+    private String mode_luminosite = "";
+    private String instruction = "";
+    private String filename = this.getClass().getSimpleName();
     public static Notifs_lumineuses newInstance() {
         Notifs_lumineuses fragment = new Notifs_lumineuses();
         return fragment;
@@ -53,6 +57,8 @@ public class Notifs_lumineuses extends Fragment {
             @Override
             public void onClick(View v) {
 
+                luminosite = true;
+
                 binding.btnNonNotifLum.setStrokeWidth(0);
                 binding.btnOuiNotifLum.setStrokeWidth(10);
                 binding.btnOuiNotifLum.setStrokeColorResource(R.color.texte_appli);
@@ -67,6 +73,8 @@ public class Notifs_lumineuses extends Fragment {
             @Override
             public void onClick(View v) {
 
+                luminosite = false;
+
                 binding.btnOuiNotifLum.setStrokeWidth(0);
                 binding.btnNonNotifLum.setStrokeWidth(10);
                 binding.btnNonNotifLum.setStrokeColorResource(R.color.texte_appli);
@@ -80,6 +88,12 @@ public class Notifs_lumineuses extends Fragment {
         binding.btnValiderNotifLum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                if (luminosite) {
+                    ((MainActivity) getActivity()).AddData(filename, mode_luminosite);
+                    ((MainActivity) getActivity()).sendData(instruction);
+                }
+
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Accueil accueil = new Accueil();
@@ -104,6 +118,8 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setTextColor(binding.btnBleu.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
+                mode_luminosite = "1"+binding.btnBleu.getText();
+
             }
         });
 
@@ -113,6 +129,8 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setText(binding.btnOrange.getText());
                 binding.tVCouleurChoisie.setTextColor(binding.btnOrange.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+                mode_luminosite = "1"+binding.btnOrange.getText();
 
 
             }
@@ -125,6 +143,8 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setTextColor(binding.btnVert.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
+                mode_luminosite = "1"+binding.btnVert.getText();
+
             }
         });
 
@@ -135,6 +155,9 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setTextColor(binding.btnRouge.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
+                mode_luminosite = "1"+binding.btnRouge.getText();
+                instruction = ""+binding.btnRouge.getText();
+
             }
         });
 
@@ -144,6 +167,8 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setText(binding.btnViolet.getText());
                 binding.tVCouleurChoisie.setTextColor(binding.btnViolet.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
+
+                mode_luminosite = "1"+binding.btnViolet.getText();
             }
         });
 
@@ -153,6 +178,8 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setText(binding.btnJaune.getText());
                 binding.tVCouleurChoisie.setTextColor(binding.btnJaune.getTextColors());
                 binding.tVCouleurChoisie.setBackgroundColor(Color.BLACK);
+
+                mode_luminosite = "1"+binding.btnJaune.getText();
             }
         });
     }

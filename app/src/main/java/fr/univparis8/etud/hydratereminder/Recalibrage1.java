@@ -36,7 +36,7 @@ public class Recalibrage1 extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
 
-        binding.iBPageSuivante.setOnClickListener(new View.OnClickListener() {
+        binding.iBPageSuivante2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 FragmentManager fragmentManager = getParentFragmentManager();

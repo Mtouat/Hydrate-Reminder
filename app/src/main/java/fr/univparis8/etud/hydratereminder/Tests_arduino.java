@@ -47,7 +47,6 @@ import fr.univparis8.etud.hydratereminder.databinding.FragmentTestsArduinoBindin
 public class Tests_arduino extends Fragment {
 
     private FragmentTestsArduinoBinding binding;
-    private BluetoothAdapter bluetoothAdapter;
 
 
     public static Tests_arduino newInstance() {
@@ -58,7 +57,9 @@ public class Tests_arduino extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
+
 
 
     @Override
@@ -82,14 +83,14 @@ public class Tests_arduino extends Fragment {
         binding.btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                //((MainActivity) getActivity()).AddData("sauvegarde.txt");
             }
         });
 
         binding.btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                ((MainActivity) getActivity()).LoadData(binding.affichage, "sauvegarde.txt");
             }
         });
     }

@@ -8,8 +8,8 @@ android {
 
     defaultConfig {
         applicationId = "fr.univparis8.etud.hydratereminder"
-        minSdk = 30
-        targetSdk = 30
+        minSdk = 28
+        targetSdk = 31
         versionCode = 1
         versionName = "1.0"
 
@@ -35,6 +35,7 @@ android {
 
 dependencies {
 
+    implementation("com.opencsv:opencsv:5.9")
     implementation("androidx.fragment:fragment:1.6.2")
     debugImplementation("androidx.fragment:fragment-testing:1.6.2")
     implementation("androidx.activity:activity:1.8.2")

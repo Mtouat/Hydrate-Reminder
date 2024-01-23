@@ -11,12 +11,18 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 
 import fr.univparis8.etud.hydratereminder.databinding.FragmentNotifsVibrationsBinding;
 
 public class Notifs_vibrations extends Fragment {
 
     private FragmentNotifsVibrationsBinding binding;
+    private boolean vibration = false;
+    private String mode_vibration = "";
+    private String instruction = "";
+    private String filename = this.getClass().getSimpleName();
     public static Notifs_vibrations newInstance() {
         Notifs_vibrations fragment = new Notifs_vibrations();
         return fragment;
@@ -49,6 +55,8 @@ public class Notifs_vibrations extends Fragment {
             @Override
             public void onClick(View v) {
 
+                vibration = true;
+
                 binding.btnNonNotifVib.setStrokeWidth(0);
                 binding.btnOuiNotifVib.setStrokeWidth(10);
                 binding.btnOuiNotifVib.setStrokeColorResource(R.color.texte_appli);
@@ -62,6 +70,8 @@ public class Notifs_vibrations extends Fragment {
             @Override
             public void onClick(View v) {
 
+                vibration = false;
+
                 binding.btnOuiNotifVib.setStrokeWidth(0);
                 binding.btnNonNotifVib.setStrokeWidth(10);
                 binding.btnNonNotifVib.setStrokeColorResource(R.color.texte_appli);
@@ -74,6 +84,29 @@ public class Notifs_vibrations extends Fragment {
         binding.btnValiderNotifVib.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                int RadioID = binding.groupeVibrations.getCheckedRadioButtonId();
+
+                if (RadioID==binding.rBFaible.getId()) {
+                    mode_vibration = "1" + binding.rBFaible.getText();
+                    instruction = "" + binding.rBFaible.getText();
+                } else if (RadioID==binding.rBMoyen.getId()) {
+                    mode_vibration = "1" + binding.rBMoyen.getText();
+                    instruction = "" + binding.rBMoyen.getText();
+                } else if (RadioID==binding.rBFort.getId()) {
+                    mode_vibration = "1" + binding.rBFort.getText();
+                    instruction = "" + binding.rBFort.getText();
+                }
+
+                if (vibration) {
+                    ((MainActivity) getActivity()).AddData(filename, mode_vibration);
+                    ((MainActivity) getActivity()).sendData(instruction);
+
+                } else {
+                    mode_vibration="0";
+                    ((MainActivity) getActivity()).AddData(filename, mode_vibration);
+
+                }
                 FragmentManager fragmentManager = getParentFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 Accueil accueil = new Accueil();
@@ -91,5 +124,8 @@ public class Notifs_vibrations extends Fragment {
             }
         });
     }
+
+
+
 
 }
