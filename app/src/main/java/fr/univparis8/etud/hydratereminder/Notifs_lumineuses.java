@@ -119,7 +119,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
                 mode_luminosite = "1"+binding.btnBleu.getText();
-
+                instruction = ""+binding.btnBleu.getText();
             }
         });
 
@@ -131,7 +131,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
                 mode_luminosite = "1"+binding.btnOrange.getText();
-
+                instruction = ""+binding.btnOrange.getText();
 
             }
         });
@@ -144,7 +144,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
                 mode_luminosite = "1"+binding.btnVert.getText();
-
+                instruction = ""+binding.btnVert.getText();
             }
         });
 
@@ -169,6 +169,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setBackgroundColor(Color.TRANSPARENT);
 
                 mode_luminosite = "1"+binding.btnViolet.getText();
+                instruction = ""+binding.btnViolet.getText();
             }
         });
 
@@ -180,6 +181,7 @@ public class Notifs_lumineuses extends Fragment {
                 binding.tVCouleurChoisie.setBackgroundColor(Color.BLACK);
 
                 mode_luminosite = "1"+binding.btnJaune.getText();
+                instruction = ""+binding.btnJaune.getText();
             }
         });
     }
