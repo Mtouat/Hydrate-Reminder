@@ -21,6 +21,7 @@ public class Notifs_sonores extends Fragment {
     MediaPlayer mediaPlayer2;
     MediaPlayer mediaPlayer3;
 
+    private String instruction = "";
 
     FragmentNotifsSonoresBinding binding;
     public static Notifs_sonores newInstance() {
@@ -40,7 +41,7 @@ public class Notifs_sonores extends Fragment {
 
         binding = FragmentNotifsSonoresBinding.inflate(inflater, container, false);
 
-        binding.groupeSons.setVisibility(View.INVISIBLE);
+    //    binding.groupeSons.setVisibility(View.INVISIBLE);
 
         binding.btnNonNotifSon.setStrokeWidth(10);
         binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
@@ -63,7 +64,8 @@ public class Notifs_sonores extends Fragment {
                 binding.btnOuiNotifSon.setStrokeWidth(10);
                 binding.btnOuiNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-                binding.groupeSons.setVisibility(View.VISIBLE);
+        //        binding.groupeSons.setVisibility(View.VISIBLE);
+
             }
         });
 
@@ -76,8 +78,7 @@ public class Notifs_sonores extends Fragment {
                 binding.btnNonNotifSon.setStrokeWidth(10);
                 binding.btnNonNotifSon.setStrokeColorResource(R.color.texte_appli);
 
-                binding.groupeSons.setVisibility(View.INVISIBLE);
-
+        //        binding.groupeSons.setVisibility(View.INVISIBLE);
 
                 if(mediaPlayer1.isPlaying()){
                     mediaPlayer1.pause();
@@ -110,6 +111,8 @@ public class Notifs_sonores extends Fragment {
                 mediaPlayer1.stop();
                 mediaPlayer2.stop();
                 mediaPlayer3.stop();
+
+
             }
         });
 
@@ -125,7 +128,7 @@ public class Notifs_sonores extends Fragment {
         });
 
         //Si on appuis sur la première image, le media se lance et les autres se mettent sur pause s'ils ont été lancé
-        binding.iVNotifSon.setOnClickListener(new View.OnClickListener() {
+    /*    binding.iVNotifSon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(mediaPlayer2.isPlaying()){
@@ -141,7 +144,12 @@ public class Notifs_sonores extends Fragment {
                 mediaPlayer1.start();
             }
 
+
         });
+        instruction = ""+binding.rBAudio1.getText();
+        instruction = ""+binding.rBAudio2.getText();
+        instruction = ""+binding.rBAudio3.getText();
+
 
         //Si on appuis sur la deuxième image, le media se lance et les autres se mettent sur pause s'ils ont été lancé
         binding.iVNotifSon2.setOnClickListener(new View.OnClickListener() {
@@ -175,6 +183,6 @@ public class Notifs_sonores extends Fragment {
 
                 mediaPlayer3.start();
             }
-        });
+        }); */
     }
 }
