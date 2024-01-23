@@ -7,8 +7,7 @@
     <string name="obj_semaine">Cette semaine (total) :  x /objectif</string>
     <string name="obj_mois">Ce mois (total) :  x /objectif</string>
     <string name="parametres"> Paramètres</string>
-    <string name="dessin_gourde">Image d\'une gourde avec son niveau</string>
-    <string name="dessin_goutte_eau">Image d\'une goutte d\'eau</string>
+    <string name="valeurs_gourde">Valeurs de la gourde</string>
 
     //Menu principal
     <string name="chgmt_gourde">Changement / ajout de gourde</string>
