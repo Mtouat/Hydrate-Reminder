@@ -1,5 +1,6 @@
         package fr.univparis8.etud.hydratereminder;
 
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,13 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.nio.Buffer;
 
 import fr.univparis8.etud.hydratereminder.databinding.FragmentMenuPrincipalBinding;
 

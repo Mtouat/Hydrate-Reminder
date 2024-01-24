@@ -1,6 +1,7 @@
 package fr.univparis8.etud.hydratereminder;
 
 import android.graphics.Color;
+import android.os.AsyncTask;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -21,6 +22,11 @@ import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.john.waveview.WaveView;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -40,9 +46,41 @@ public class Accueil extends Fragment {
         return fragment;
     }
 
+    private class ListenForData extends AsyncTask<Void, String, Void> {
+
+        @Override
+        protected Void doInBackground(Void... voids) {
+
+            try {
+                Socket socket = new Socket("192.168.4.1", 80);
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+
+                while (true) {
+                    String line;
+                    while ((line = bufferedReader.readLine()) != null) {
+                        publishProgress(line);
+                    }
+                }
+
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }
+
+        @Override
+        protected void onProgressUpdate(String... values) {
+            String data = values[0];
+            binding.tvVarPoids.setText(data);
+        }
+    }
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        ListenForData data_reader = new ListenForData();
+        data_reader.execute();
+
 
     }
 
