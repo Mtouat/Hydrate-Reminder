@@ -8,6 +8,7 @@
     <string name="obj_mois">Ce mois (total) :  x /objectif</string>
     <string name="parametres"> Paramètres</string>
     <string name="valeurs_gourde">Valeurs de la gourde</string>
+    <string name="dessin_gourde">dessins d\'une gourde</string>
 
     //Menu principal
     <string name="chgmt_gourde">Changement / ajout de gourde</string>
